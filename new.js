@@ -1,2 +1,2 @@
-import { doubled } from '.\arrow';
+import { 'double' } from './arrow';
 console.log(doubled);
