@@ -5,7 +5,7 @@ class work extends me {
         this.color = d;
     }
     new(){
-        console.log(`Node Welcome ${a} !!!!`);
+        console.log(`Node Welcome ${this.name} !!!!`);
     }
 }
 let you = new work('Yashu',90,6.0,"Grey");

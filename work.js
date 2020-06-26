@@ -8,7 +8,6 @@ class me {
         console.log(`Hello ${this.name} welcome to node`);
     }
 }
-
 module.exports = {
     new me()
 }

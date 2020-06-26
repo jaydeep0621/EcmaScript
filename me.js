@@ -17,8 +17,6 @@ calculator.prototype.dob;
 let a = new calculator(`Jaydeep`)
 console.log(calculator.info());
 
-
-
 /*calculator.age = 21;
 calculator.dob = "21-06-1999"
 let c = calculator.add(5,7);
