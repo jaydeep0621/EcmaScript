@@ -15,13 +15,8 @@ calculator.prototype.info = function() {
 };
 calculator.prototype.dob;
 let a = new calculator(`Jaydeep`)
-console.log(calculator.info());
+//initialized the class
+new calculator();
 
-/*calculator.age = 21;
-calculator.dob = "21-06-1999"
-let c = calculator.add(5,7);
-console.log("Add is :",c);
-let b = calculator.multiply(5,7);
-console.log("Multiply is :",b)
-console.log("Ages is :",calculator.age);
-console.log("Date of Birth is :",calculator.dob);*/
+//calling method by class variable which is a
+console.log(a.info());
