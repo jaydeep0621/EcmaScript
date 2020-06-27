@@ -1,0 +1,102 @@
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>
+             Calaculator
+        </title>
+        <style>
+            input[type="button"] 
+		{ 
+            background-color: lime;
+            color: mediumblue;
+            border: mediumspringgreen, 2px;
+            height: 30px;
+            width: 30px;
+	
+		} 
+        input[type="text"]{
+            height: 20px;
+            width: 132px;
+        }
+        </style>
+    </head>
+    <body>
+        <center>
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="write"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="1" id="btn1" onclick="display('1')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="2" id="btn2"  onclick="display('2')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="3" id="btn3" onclick="display('3')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="+" id="btnadd" onclick="display('+')"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="4" id="btn4" onclick="display('4')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="5" id="btn5" onclick="display('5')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="6" id="btn7" onclick="display('6')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="-" id="btnsub" onclick="display('-')"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="7" id="btn7" onclick="display('7')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="8" id="btn8" onclick="display('8')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="9" id="btn9" onclick="display('9')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="*" id="btnmul" onclick="display('*')"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset" value="C" id="btnclr"/>
+                    </td>
+                    <td>
+                        <input type="button" value="0" id="btn0" onclick="display('1')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="=" id="btneql"onclick="solve"/>
+                    </td>
+                    <td>
+                        <input type="button" value="/" id="btndiv" onclick="display('1')"/>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <script type="text/javascript">
+
+function display(let a){
+    document.getElementById("write").value+=a;
+}
+function cal(){
+    let x = document.getElementById("write").value 
+			let y = eval(x) 
+			document.getElementById("write").value = y 
+}
+        </script>
+        
+    </body>
+</html>
