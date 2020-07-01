@@ -1,7 +1,6 @@
 {
   "name": "es",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,10 @@
   "homepage": "https://github.com/jaydeep0621/EcmaScript#readme",
   "dependencies": {
     "@babel/core": "^7.10.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "description": ""
 }
